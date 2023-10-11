@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="com.djt.testcases.testbase.login.login">
         <methods>
@@ -10,5 +10,27 @@
         </methods>
       </class> <!-- com.djt.testcases.testbase.login.login -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Address Test(failed)">
+    <classes>
+      <class name="com.djt.testcases.testbase.Adress_set.Adress_set">
+        <methods>
+          <include name="init"/>
+          <include name="setaddress"/>
+          <include name="waitt"/>
+        </methods>
+      </class> <!-- com.djt.testcases.testbase.Adress_set.Adress_set -->
+    </classes>
+  </test> <!-- Address Test(failed) -->
+  <test thread-count="5" name="RightNavigation_Test(failed)">
+    <classes>
+      <class name="com.djt.testcases.RightNavigation.RightNavigatio_Testcases">
+        <methods>
+          <include name="waitt"/>
+          <include name="rightNavigation"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.djt.testcases.RightNavigation.RightNavigatio_Testcases -->
+    </classes>
+  </test> <!-- RightNavigation_Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

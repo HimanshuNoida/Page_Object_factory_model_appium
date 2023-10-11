@@ -6,10 +6,31 @@
       <class name="com.djt.testcases.testbase.login.login">
         <methods>
           <include name="init"/>
-          <include name="TearDown"/>
           <include name="loginnumber"/>
         </methods>
       </class> <!-- com.djt.testcases.testbase.login.login -->
     </classes>
   </test> <!-- Test(failed) -->
+  <test thread-count="5" name="Address Test(failed)">
+    <classes>
+      <class name="com.djt.testcases.testbase.Adress_set.Adress_set">
+        <methods>
+          <include name="init"/>
+          <include name="setaddress"/>
+          <include name="waitt"/>
+        </methods>
+      </class> <!-- com.djt.testcases.testbase.Adress_set.Adress_set -->
+    </classes>
+  </test> <!-- Address Test(failed) -->
+  <test thread-count="5" name="RightNavigation_Test(failed)">
+    <classes>
+      <class name="com.djt.testcases.RightNavigation.RightNavigatio_Testcases">
+        <methods>
+          <include name="waitt"/>
+          <include name="rightNavigation"/>
+          <include name="init"/>
+        </methods>
+      </class> <!-- com.djt.testcases.RightNavigation.RightNavigatio_Testcases -->
+    </classes>
+  </test> <!-- RightNavigation_Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

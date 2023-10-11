@@ -6,4 +6,19 @@
 			<class name="com.djt.testcases.testbase.login.login" />
 		</classes>
 	</test> <!-- Test -->
+	
+	
+	<test  name="Address Test">
+		<classes>
+			<class name="com.djt.testcases.testbase.Adress_set.Adress_set" />
+		</classes>
+	</test> <!-- Test -->
+	
+	
+	<test  name="RightNavigation_Test">
+		<classes>
+			<class name="com.djt.testcases.RightNavigation.RightNavigatio_Testcases" />
+		</classes>
+	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

@@ -35,21 +35,17 @@ public class LoginScreen extends ScreenBase {
 		
 	}
 
-	public  void login() {
-	
+	public  setLocationScreen loginsendnumber(String number) throws InterruptedException {
 		loginnumber.click();
-	
-	}
-
-	public  void loginsendnumber(String number) throws InterruptedException {
+		Thread.sleep(3000);
 		loginnumber.sendKeys(number);
 		Thread.sleep(3000);
-		hideKeybord();
+		((AndroidDriver<WebElement>) driver).pressKey(new KeyEvent(AndroidKey.BACK));
 		Thread.sleep(3000);
 		continuee.click();
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		Submit.click();
-
+		return new setLocationScreen(driver);
 	}
 
 }

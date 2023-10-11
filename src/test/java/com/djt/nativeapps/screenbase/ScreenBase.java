@@ -9,6 +9,9 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.djt.nativeapps.loginScreen.LoginScreen;
+import com.djt.nativeapps.loginScreen.RightnNavigationScreen;
+import com.djt.nativeapps.loginScreen.setLocationScreen;
+import com.djt.testcases.RightNavigation.RightNavigatio_Testcases;
 
 import io.appium.java_client.AppiumDriver;
 
@@ -16,10 +19,12 @@ import io.appium.java_client.android.AndroidDriver;
 
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
-public class ScreenBase<MobileElement> {
+public class ScreenBase {
 
 	
 	public  LoginScreen login;
+	public RightnNavigationScreen nav;
+	public setLocationScreen address;
 	
 	public static AndroidDriver driver;
 	
@@ -46,5 +51,6 @@ public class ScreenBase<MobileElement> {
 		driver.hideKeyboard();
 
 	}
+	
 	
 }
